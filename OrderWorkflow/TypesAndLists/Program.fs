@@ -1,7 +1,7 @@
 ﻿// Learn more about F# at http://fsharp.org
 
-open System
-open OrderTaking
+open OrderTakingTypes
+open OrderTakingFunctions
 
 let composers = ["verdi"; "puccini"]
 let moreComposers = "vivaldi" :: composers

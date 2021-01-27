@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Compile Include="OrderTaking.Types.fs" />
+    <Compile Include="OrderTaking.Functions.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
