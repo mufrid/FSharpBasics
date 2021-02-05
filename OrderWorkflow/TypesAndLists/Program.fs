@@ -13,6 +13,10 @@ let filterEveryboydExceptForComposersStartingWithP = List.filter (fun (x:string)
 
 let orderQuantity = UnitQuantity 4
 
+let paymentAmount = 4.0m
+
+let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Cash }
+
 [<EntryPoint>]
 let main argv =
     printfn "Learning the basics of F# lists!"
@@ -25,5 +29,7 @@ let main argv =
     printfn "First composer in the list: %s" moreComposers.Head
 
     printfn $"Doubled order quantity of {orderQuantity} is {doubleQuantity orderQuantity}"
+
+    printfn $"Converted from {paymentInUSDCash} to {convertToAnotherCurrency paymentInUSDCash NOR}"
 
     0 // return an integer exit code

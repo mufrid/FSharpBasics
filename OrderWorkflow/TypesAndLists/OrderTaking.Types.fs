@@ -15,8 +15,7 @@
             CardNumber : CardNumber
         }
 
-    type Currency = EUR | USD
-    type PaymentAmount = PaymentAmount of decimal
+    type Currency = NOR | USD
 
     type PaymentMethod =
         | Cash
@@ -25,7 +24,7 @@
 
     type Payment = 
         {
-            Amount : PaymentAmount
+            Amount : decimal
             Currency : Currency
             Method: PaymentMethod
         }
