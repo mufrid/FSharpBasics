@@ -1,7 +1,7 @@
 module OrderTakingTests
 
 open Xunit
-open OrderTakingFunctions
+open CurrencyConverter
 open OrderTakingTypes
 
 [<Fact>]

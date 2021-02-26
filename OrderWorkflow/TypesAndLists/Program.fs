@@ -30,6 +30,4 @@ let main argv =
 
     printfn $"Doubled order quantity of {orderQuantity} is {doubleQuantity orderQuantity}"
 
-    printfn $"Converted from {paymentInUSDCash} to {convertToAnotherCurrency paymentInUSDCash NOR}"
-
     0 // return an integer exit code
