@@ -15,7 +15,7 @@
             CardNumber : CardNumber
         }
 
-    type Currency = NOR | USD
+    type Currency = NOK | USD | EUR
 
     type PaymentMethod =
         | Cash
