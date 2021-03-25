@@ -1,4 +1,4 @@
-module OrderTakingTests
+module CurrencyConverterTests
 
 open Xunit
 open CurrencyConverter

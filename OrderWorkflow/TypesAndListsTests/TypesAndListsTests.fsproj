@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="OrderTakingTests.fs" />
+    <Compile Include="CurrencyConverterTests.fs" />
   </ItemGroup>
 
   <ItemGroup>
