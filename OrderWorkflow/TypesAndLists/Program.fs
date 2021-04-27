@@ -15,7 +15,7 @@ let orderQuantity = UnitQuantity 4
 
 let paymentAmount = 4.0m
 
-let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Cash }
+let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=None }
 
 [<EntryPoint>]
 let main argv =

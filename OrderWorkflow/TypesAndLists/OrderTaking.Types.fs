@@ -26,7 +26,7 @@
         {
             Amount : decimal
             Currency : Currency
-            Method: PaymentMethod
+            Method: PaymentMethod option
         }
 
     // Type that represent functions ie. behavior
