@@ -6,9 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="OrderTaking.Types.fs" />
-    <Compile Include="OrderTaking.Functions.fs" />
-    <Compile Include="CurrencyConverter.fs" />
+    <Compile Include="Orders\OrderTaking.Types.fs" />
+    <Compile Include="Orders\OrderTaking.Functions.fs" />
+    <Compile Include="Currencies\CurrencyConverterUSD.fs" />
+    <Compile Include="Currencies\CurrencyConverter.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
