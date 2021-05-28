@@ -43,7 +43,7 @@ let ``Convert from USD to NOK using ConvertPaymentCurrency type`` () =
     let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Some(Cash) }
     let expected = {Amount = 32.0m; Currency=NOK; Method=Some(Cash) }
 
-    let actual = convertPaymentCurrency paymentInUSDCash NOK 
+    let actual = ConvertPaymentCurrency paymentInUSDCash NOK 
 
     Assert.Equal(expected, actual)
     

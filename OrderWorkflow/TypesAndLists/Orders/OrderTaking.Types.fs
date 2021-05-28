@@ -28,8 +28,3 @@
             Currency : Currency
             Method: PaymentMethod option
         }
-
-    // Type that represent functions ie. behavior
-    // Convert payment from one currency to another
-    // First payment is input, Current is the parameter and the second payment is the output
-    type ConvertPaymentCurrency = Payment -> Currency -> Payment
