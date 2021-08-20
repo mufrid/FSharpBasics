@@ -18,7 +18,7 @@ let ``Convert from USD to NOK`` () =
 [<Fact>]
 let ``Convert from USD to EUR`` () =
     let paymentAmount = 4.0m
-    let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=None }
+    let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Option.None }
     let expected = 3.320m
 
     let actual = convertFromUSDToAnotherCurrency paymentInUSDCash EUR
