@@ -21,12 +21,16 @@ let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Option.None 
 let main argv =
     printfn "Learning the basics of F# lists!"
 
+    printfn "List of all composers:"
+    allComposers
+        |> List.iter printElement
+
     printfn "Composers having name starting with P:"
     allComposers 
         |> filterEveryboydExceptForComposersStartingWithP 
         |> List.iter printElement
     
-    printfn "First composer in the list: %s" moreComposers.Head
+    printfn "First composer in the list: %s" allComposers.Head
 
     printfn $"Doubled order quantity of {orderQuantity} is {doubleQuantity orderQuantity}"
 
