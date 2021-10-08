@@ -2,7 +2,7 @@
 
 open OrderTakingTypes
 
-    let doubleQuantity orderQuantity =
+let doubleQuantity orderQuantity =
         match orderQuantity with
         | UnitQuantity unitQuantity ->
             (decimal)(unitQuantity * 2)
