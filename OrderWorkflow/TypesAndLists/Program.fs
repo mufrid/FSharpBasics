@@ -11,12 +11,6 @@ let printElement element = printfn "%s " element
 
 let filterEveryboydExceptForComposersStartingWithP = List.filter (fun (x:string) -> x.StartsWith("p"))
 
-let orderQuantity = UnitQuantity 4
-
-let paymentAmount = 4.0m
-
-let paymentInUSDCash = { Amount=paymentAmount; Currency=USD; Method=Option.None }
-
 [<EntryPoint>]
 let main argv =
     printfn "Learning the basics of F# lists!"
@@ -31,7 +25,5 @@ let main argv =
         |> List.iter printElement
     
     printfn "First composer in the list: %s" allComposers.Head
-
-    printfn $"Doubled order quantity of {orderQuantity} is {doubleQuantity orderQuantity}"
 
     0 // return an integer exit code
