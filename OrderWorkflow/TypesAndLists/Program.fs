@@ -1,8 +1,5 @@
 ﻿// Learn more about F# at http://fsharp.org
 
-open OrderTakingTypes
-open OrderTakingFunctions
-
 let composers = ["verdi"; "puccini"]
 let moreComposers = "vivaldi" :: composers
 let evenMoreComposers = ["paganini"]
