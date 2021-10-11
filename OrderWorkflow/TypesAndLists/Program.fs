@@ -1,5 +1,7 @@
 ﻿// Learn more about F# at http://fsharp.org
 
+open ListsOperations
+
 let composers = ["verdi"; "puccini"]
 let moreComposers = "vivaldi" :: composers
 let evenMoreComposers = ["paganini"]
@@ -21,6 +23,7 @@ let main argv =
         |> filterEveryboydExceptForComposersStartingWithP 
         |> List.iter printElement
     
-    printfn "First composer in the list: %s" allComposers.Head
+    let firstComposerInTheList = firstItemInList allComposers
+    printfn "First composer in the list: %s" firstComposerInTheList
 
     0 // return an integer exit code

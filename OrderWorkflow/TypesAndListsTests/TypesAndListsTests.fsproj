@@ -5,6 +5,7 @@
     <GenerateProgramFile>false</GenerateProgramFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ListOperationsTests.fs" />
     <Compile Include="Orders\OrderTakingTests.fs" />
     <Compile Include="Currencies\CurrencyConverterTests.fs" />
   </ItemGroup>

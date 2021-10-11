@@ -4,7 +4,7 @@ open OrderTakingTypes
 
     // Type that represent functions ie. behavior
     // Convert payment from one currency to another
-    // First payment is input, Current is the parameter and the second payment is the output
+    // First parameter is input of type payment, the second parameter is input of type Currency and the second payment is the output
     type ConvertPaymentCurrency = Payment -> Currency -> Payment
 
     let ConvertPaymentCurrency convertFromPayment convertToCurrency =
