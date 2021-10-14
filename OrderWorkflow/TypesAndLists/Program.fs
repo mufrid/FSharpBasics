@@ -8,8 +8,6 @@ let evenMoreComposers = ["paganini"]
 let allComposers = List.append moreComposers evenMoreComposers
 let printElement element = printfn "%s " element
 
-let filterEveryboydExceptForComposersStartingWithP = List.filter (fun (x:string) -> x.StartsWith("p"))
-
 [<EntryPoint>]
 let main argv =
     printfn "Learning the basics of F# lists!"
@@ -19,8 +17,7 @@ let main argv =
         |> List.iter printElement
 
     printfn "Composers having name starting with P:"
-    allComposers 
-        |> filterEveryboydExceptForComposersStartingWithP 
+    filterItemsStartingWithLetter allComposers "p"
         |> List.iter printElement
     
     let firstComposerInTheList = firstItemInList allComposers
