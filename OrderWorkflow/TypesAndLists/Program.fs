@@ -2,16 +2,16 @@
 
 open ListsOperations
 
-let composers = ["verdi"; "puccini"]
-let moreComposers = "vivaldi" :: composers
-let evenMoreComposers = ["paganini"]
-let allComposers = List.append moreComposers evenMoreComposers
 let printElement element = printfn "%s " element
 
 [<EntryPoint>]
 let main argv =
     printfn "Learning the basics of F# lists!"
 
+    let composers = ["verdi"; "puccini"]
+    let moreComposers = AddAsFirstItemInList "vivaldi" composers
+    let evenMoreComposers = ["paganini"]
+    let allComposers = List.append moreComposers evenMoreComposers
     printfn "List of all composers:"
     allComposers
         |> List.iter printElement

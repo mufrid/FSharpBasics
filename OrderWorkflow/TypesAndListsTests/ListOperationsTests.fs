@@ -29,3 +29,12 @@ let ``Get only items starting with letter V`` () =
     let actual = filterItemsStartingWithLetter composers "v"
 
     Assert.Equal<list<string>>(expected, actual)
+
+[<Fact>]
+let ``Add one item to the list`` () =
+    let composers = ["verdi"; "vivaldi"]
+    let expected = ["paganini"; "verdi"; "vivaldi"]
+
+    let actual = AddAsFirstItemInList "paganini" composers
+
+    Assert.Equal<list<string>>(expected, actual)
