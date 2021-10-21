@@ -38,3 +38,13 @@ let ``Add one item to the list`` () =
     let actual = AddAsFirstItemInList "paganini" composers
 
     Assert.Equal<list<string>>(expected, actual)
+
+[<Fact>]
+let ``Add one item as the last item in the list`` () =
+    let composers = ["verdi"; "vivaldi"]
+    let expected = ["verdi"; "vivaldi"; "paganini"]
+
+    let actual = AppendToList composers "paganini"
+
+    Assert.Equal<list<string>>(expected, actual)
+
