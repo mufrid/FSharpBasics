@@ -14,7 +14,7 @@ let main argv =
      ]
 
     let moreComposers = AddAsFirstItemInList "vivaldi" composers
-    let allComposers = AppendToList moreComposers "paganini"
+    let allComposers = AppendItemToList moreComposers "paganini"
     printfn "List of all composers:"
     allComposers
         |> List.iter printElement
@@ -23,7 +23,6 @@ let main argv =
     filterItemsStartingWithLetter allComposers "p"
         |> List.iter printElement
     
-    let firstComposerInTheList = firstItemInList allComposers
-    printfn "First composer in the list: %s" firstComposerInTheList
+    printfn "First composer in the list: %s" (firstItemInList allComposers)
 
     0 // return an integer exit code

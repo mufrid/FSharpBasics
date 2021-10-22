@@ -44,7 +44,7 @@ let ``Add one item as the last item in the list`` () =
     let composers = ["verdi"; "vivaldi"]
     let expected = ["verdi"; "vivaldi"; "paganini"]
 
-    let actual = AppendToList composers "paganini"
+    let actual = AppendItemToList composers "paganini"
 
     Assert.Equal<list<string>>(expected, actual)
 

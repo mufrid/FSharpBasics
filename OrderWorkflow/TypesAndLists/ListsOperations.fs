@@ -11,7 +11,7 @@ let AddAsFirstItemInList item itemsList =
     let extendedList = item :: itemsList
     extendedList
 
-let AppendToList itemsList item =
+let AppendItemToList itemsList item =
     let toAppend = [item]
     let extendedList = List.append itemsList toAppend
     extendedList
