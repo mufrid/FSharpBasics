@@ -38,6 +38,7 @@ let ``Add one item to the list`` () =
     let actual = AddAsFirstItemInList "paganini" composers
 
     Assert.Equal<list<string>>(expected, actual)
+    Assert.NotSame(expected, actual)
 
 [<Fact>]
 let ``Add one item as the last item in the list`` () =
@@ -47,4 +48,15 @@ let ``Add one item as the last item in the list`` () =
     let actual = AppendItemToList composers "paganini"
 
     Assert.Equal<list<string>>(expected, actual)
+    Assert.NotSame(expected, actual)
 
+[<Fact>]
+let ``Add one item to the same list`` () =
+    let composers = ResizeArray(["verdi"; "vivaldi"])
+
+    let moreComposers = InsertAsFirstItemInList "paganini" composers 
+    let actual = firstItemInArray moreComposers
+
+    Assert.Equal<string>("paganini", actual)
+    Assert.Equal(3, moreComposers.Count)
+    Assert.Same(composers, moreComposers)
